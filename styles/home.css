@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #4954ee;  
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 812px;
+    box-sizing: border-box;
+    background-color: #10462E;
+}
+
+.home__destaque{
+    width: 375px;
+    height: 233px;
+    background-color: #48D38F;
+}
+
+.home__destaque__imagem{
+    margin-top: 48px;
+    margin-left: 314px;
+}
+
+.home__destaque__propaganda{
+    display: flex;
+    justify-content: space-between;
+    width: 343px;
+    height: 135px;
+    background-color: #10462E;
+    border: #ffffff 0.5px solid;
+    border-radius: 8px;
+    margin-left: 14px;
+}
+
+.home__destaque__propaganda__textos{
+    color:#ffffff;
+    margin: auto;
+    line-height: 30px;
+}
+
+.home__destaque__propaganda__textos__propaganda{
+    font-family: 'abel',sans-serif;
+    font-size: 18px;
+}
+
+.home__destaque__propaganda__textos__detalhes{
+    font-family: 'abel',sans-serif;
+    font-size: 15px;
+}
+
+.home__opcoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__opcoes__local{
+    margin-top: 11px;
+    width: 343px;
+    height: 54px;
+    background-color: #E0E0E0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home__opcoes__local__texto{
+    font-family: 'abel',sans-serif;
+    margin: auto 15px;
+    font-size: 18px;
+}
+
+.home__opcoes__local__select{
+    width: 105px;
+    height: 34px;
+    border-radius: 1000px;
+    margin: auto 15px;
+    
+}
+
+.home__opcoes__lugares-favoritos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    width: 335px;
+    height: 34px;
+    box-sizing: border-box;
+}
+
+.home__opcoes__lugares-favoritos__imagem-estrela{
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    padding: 7px;
+    border-radius: 1000px;
+}
+
+.home__opcoes__lugares-favoritos__texto{
+    margin: auto;
+    font-family: 'abel',sans-serif;
+    font-size: 16px;
+    margin-right: 29px;
+    color: #FFFFFF;
+}
+
+.home__opcoes__lugares-favoritos__seta{
+    width: 7.41px;
+    height: 12px;
+    margin-block: auto;
+}
+
+.home__opcoes__vetor-divisao{
+    margin-top: 22px;
+    width: 303px;
+    height: 0.1px;
+    margin-inline-start: auto;
+}
+
+.home__opcoes__roteiro{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    width: 335px;
+    height: 34px;
+    box-sizing: border-box;
+}
+
+.home__opcoes__roteiro__seta-posicao{
+    background-color: #FFFFFF;
+    width: 9px;
+    height: 13px;
+    padding: 10px 12px 11px 13px ;
+    border-radius: 1000px;
+}
+
+.home__opcoes__roteiro__texto{
+    margin: auto ;
+    margin-right: 125px;
+    font-family: 'abel',sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.home__opcoes__roteiro__seta{
+    width: 7.41px;
+    height: 12px;
+    margin-block: auto;
+}
+
+.home__destaque__proximo-a-voce{
+    display:flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.home__destaque__proximo-a-voce__texto{
+    margin-left: 24px;
+    font-size: 18px;
+    font-family: 'abel',sans-serif;
+    color: #EFAC29;
+}
+
+.home__destaque__proximo-a-voce__mapa{
+    margin-top:16px;
+    width: 342px;
+    height: 183px;
+    margin-inline: auto;
+}
