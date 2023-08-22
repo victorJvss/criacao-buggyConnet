@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #4954ee;
+}
+
+.map-location{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 375px;
+    height: 812px;
+    border: #000000 solid 1px;
+    background-color: #263A31;
+}
+
+.map-location__pesquisa{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 162px;
+    background-color: #48D38F;
+}
+
+.map-location__pesquisa__seta{
+    width: 21px;
+    height: 21px;
+    margin: 52px 0px 0px 16px;
+}
+
+.map-location__pesquisa__input{
+    width: 274px;
+    height: 30px;
+    margin-inline: auto;
+    margin-top: 14px;
+    border: none;
+}
+
+.map-location__pesquisa__botao-mais{
+    width: 14px;
+    height: 14px;
+    margin-inline-start: auto;
+    margin-right: 16px;
+    margin-top: 15px;
+}
+
+.map-location__profissional{
+    width: 349px;
+    height: 216px;
+    background-color: #FFFFFF0A;
+    border-radius: 8px;
+    margin-inline: auto;
+    margin-bottom: 11px;
+}
+
+.map-location__profissional__foto-perfil{
+    border-radius: 1000px;
+    margin: 16.5px 0 0 16.5px;
+}
+
+.map-location__profissional__info{
+    margin: 24px 0 0 16px;
+    color: #FFFFFF;
+    font-family: 'abel',sans-serif;
+}
+
+.map-location__profissional__info__nome{
+    font-size: 32px;
+}
+
+.map-location__profissional__info__status{
+    font-size: 12px;
+}
+
+.map-location__rotas__rota{
+    display: flex;
+    width: 316px;
+    height: 80px;
+    margin-bottom: 34px;
+    background-color: #FFFFFF0A;
+    margin-left: 15px;
+    border-radius: 8px;
+}
+
+.map-location__rotas__paisagem{
+    border-radius: 8px 0px 0px 8px;
+}
+
+.map-location__rotas__nome-do-local{
+    font-size: 16px;
+    font-family: 'abel',sans-serif;
+    color: #FFFFFF;
+    margin: auto 16px;
+}
