@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #4954ee;
+}
+
+.wallet{
+    width: 375px;
+    height:812px;
+    border: #000000 solid 1px; 
+    background-color:#263A31 ; 
+}
+
+.wallet__saldo{
+    width: 375px;
+    height: 266px;
+    background-color: #48D38F;
+}
+
+.wallet__saldo__icone-voltar{
+    margin: 44px 0 27px 16px ;
+}
+
+.wallet__saldo__texto-carteira{
+    margin: 0 0 24px 16px;
+    font-family: 'abel', sans-serif;
+    font-size: 32px;
+}
+
+.wallet__saldo__campo-saldo{
+    width: 343px;
+    height: 94px;
+    background-color: #F6F6F6;
+    border-radius: 14px;
+    margin: auto;
+}
+
+.wallet__saldo__campo-saldo__visualizar-saldo{
+    display: flex;   
+    justify-content: space-between
+}
+
+.wallet__saldo__campo-saldo__visualizar-saldo__texto{
+    margin: 25px 0 0 25px;
+    font-family: 'abel',sans-serif;
+    font-size: 20px;
+}
+
+.wallet__saldo__campo-saldo__visualizar-saldo__extrato{
+    margin: 30px 25px 0 0;
+    width:7px;
+    height: 12px;
+}
+
+.wallet__saldo__campo-saldo__saldo-disponivel{
+    margin-left: 25px;
+    font-family: 'abel',sans-serif;
+    font-size:24px;
+}
+
+.wallet__opcoes__tipo-pagamento{
+    margin: 9px 0px 0px 19px;
+    font-family: 'abel',sans-serif;
+    color: #EFAC29;
+    font-size: 16px;
+}
+
+.wallet__opcoes__perfil__tipo-de-perfil{
+    margin: 28px 0 18px 19px;
+    font-family: 'abel', sans-serif;
+    font-size:16px;
+    color: #F8F8F8;
+}
+
+.wallet__opcoes__perfil__pessoal{
+    display: flex;
+    margin: 0px 0px 32px 16px;
+}
+
+.wallet__opcoes__perfil__pessoal__icone-pessoal{
+    margin-right: 15px;
+}
+
+.wallet__opcoes__perfil__pessoal__texto{
+    margin-block: auto ;
+    font-family: 'abel', sans-serif;
+    color: #F8F8F8;
+    font-size: 14px;
+}
+
+.wallet__opcoes__perfil__profissional{
+    display: flex;
+    margin: 0px 0px 17px 16px;
+}
+
+.wallet__opcoes__perfil__profissional__textos{
+    margin-block: auto;
+}
+
+.wallet__opcoes__perfil__profissional__icone{
+    margin-right: 15px ;
+}
+
+.wallet__opcoes__perfil__profissional__textos__buggueiro-profissional{
+    font-family: 'abel',sans-serif;
+    color: #EFAC29;
+    font-size:14px;
+
+}
+
+.wallet__opcoes__perfil__profissional__textos__torne-se-profissional{
+    font-size: 13px;
+    font-family: 'abel', sans-serif;
+    color: #A4A5AA ;   
+}
+
+.wallet__opcoes__cupons__texto{
+    margin: 28px 0px 25px 15px ;
+    font-family: 'abel',sans-serif;
+     color: #A4A4AC;
+     font-size: 16px;
+}
+
+.wallet__opcoes__cupons__obtidos{
+    display: flex;
+    margin: 0px 0px 35px 16px;
+}
+
+.wallet__opcoes__cupons__obtidos__icone{
+    margin-right:21px;
+}
+
+.wallet__opcoes__cupons__obtidos__texto{
+    color: #F8F8F8;
+    margin-block: auto;
+    font-family: 'abel',sans-serif;
+    font-size: 14px;
+}
+
+.wallet__opcoes__cupons__texto-adicione-cupons{
+    margin-left: 16px;
+    color: #EFAC29;
+    font-family: 'abel',sans-serif;
+    font-size: 16px;
+}
+
+.wallet__opcoes__promocoes__texto-promocao{
+    margin: 26px 14px;
+    font-family: 'abel',sans-serif;
+    font-size: 16px;
+    color: #A4A4AC;
+}
+
+.wallet__opcoes__promocoes__texo-adicione-codigo{
+    margin-left: 16px;
+    color: #EFAC29;
+    font-family: 'abel',sans-serif;
+    font-size: 16px;
+}
