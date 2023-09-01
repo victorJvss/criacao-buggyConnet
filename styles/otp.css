@@ -73,8 +73,10 @@ body{
 }
 
 .conteudo__sessao-principal__botoes-voltar-proximo__seta{
-    width: 49px;
-    height: 49px;
+    width: 16px;
+    height: 16px;
+    padding: 17px;
+    background-color: #f4f4f4;
     border: #000000 1px solid;
     border-radius: 100%;
     display: flex;
