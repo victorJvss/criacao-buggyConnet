@@ -78,11 +78,23 @@ body{
 }
 
 .home__opcoes__local__select{
+    display: flex;
+    margin: 10px 15px 0 0 ;
+    justify-content: center;  
     width: 105px;
     height: 34px;
+    background-color: #FFFFFF;
     border-radius: 1000px;
-    margin: auto 15px;
-    
+}
+
+.home__opcoes__local__select__icone-relogio{
+    width: 20px;
+    height: 20px;
+    margin-block: auto;
+}
+
+.home__opcoes__local__select__opcoes{
+    border: none;
 }
 
 .home__opcoes__lugares-favoritos{

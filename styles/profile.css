@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.perfil{
+    width: 375px;
+    height: 812px;
+    border: #000000 solid 0.2px;
+    background-color: #263A31;
+}
+
+.perfil__opcoes{
+    width: 375px;
+    height: 266px;
+    background-color:#48D38F;
+}
+
+.perfil__opcoes__sair{
+    margin: 44px 0 9px 16px;
+}
+
+.perfil__opcoes__nome-foto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfil__opcoes__nome-foto__nome{
+    margin-block: auto;
+    margin-left: 15px;
+    font-family: 'abel',sans-serif;
+    font-size: 24px;
+}
+
+.perfil__opcoes__nome-foto__foto{
+    margin-right: 9px;
+}
+
+.perfil__opcoes__pontuacao{
+    display: flex;
+    width: 52px;
+    height: 24px;
+    margin: 0 0 18px 16px;
+    background-color: #F6F6F6;
+    border-radius: 1000px;
+    justify-content: space-evenly;
+}
+
+.perfil__opcoes__pontuacao__icone-estrela{
+    width: 10.55px;
+    height: 10px;
+    margin-block: auto;
+}
+
+.perfil__opcoes__pontuacao__pontos{
+    font-family: 'abel',sans-serif;
+    margin-block: auto;
+}
+
+.perfil__opcoes__opcao{
+    display: flex;
+    justify-content: space-around;
+}
+
+.perfil__opcoes__opcao__perfil{
+    width: 105px;
+    height: 74px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    
+}
+
+.perfil__opcoes__opcao__perfil__temas{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.perfil__opcoes__opcao__perfil__temas__textos{
+    font-family: 'abel',sans-serif;
+    font-size: 16px;
+}
+
+.perfil__divisao{
+    width: 375px;
+    height: 10px;
+    background-color: #EEEEEE;
+}
+
+.perfil__suporte{
+    margin: 22px 0 0 16px;
+}
+
+.perfil__suporte__opcoes{
+    display: flex;
+    margin-bottom: 36px;
+}
+
+.perfil__suporte__opcoes__textos{
+    margin-left: 17px;
+    color: #FFFFFF;
+    font-family: 'abel',sans-serif;
+    font-size: 16px;
+}
+
+.perfil__suporte__versao{
+    color: #EFAC29;
+    font-family: 'abel',sans-serif;
+    font-size: 16px;
+}
