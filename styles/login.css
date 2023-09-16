@@ -113,5 +113,50 @@ main{
     text-decoration: none;
 }
 
+.conteudo__campo-de-contato__custom-select {
+    position: relative;
+    width: 104px;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 7px;
+}
 
+.conteudo__campo-de-contato__custom-select .conteudo__campo-de-contato__custom-select__selected-option {
+    display: flex;
+    align-items: center;
+    height: 49px;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.conteudo__campo-de-contato__custom-select img {
+    max-width: 43px;
+    max-height: 27px;
+    margin-right: 5px;
+}
+
+.conteudo__campo-de-contato__custom-select .conteudo__campo-de-contato__custom-select__options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+
+.conteudo__campo-de-contato__custom-select .conteudo__campo-de-contato__custom-select__options__option {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.conteudo__campo-de-contato__custom-select .conteudo__campo-de-contato__custom-select__options__option:hover {
+    background-color: #f0f0f0;
+}
 
