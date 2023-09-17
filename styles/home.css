@@ -71,10 +71,17 @@ body{
     justify-content: space-between;
 }
 
-.home__opcoes__local__texto{
-    font-family: 'abel',sans-serif;
+.home__opcoes__local__input{
+    height: 35px;
     margin: auto 15px;
-    font-size: 18px;
+    border: none;
+    background-color: #E0E0E0;
+}
+
+.home__opcoes__local__input::placeholder{
+    font-family: 'abel',sans-serif;
+    color: #000000;
+    font-size: 16px;
 }
 
 .home__opcoes__local__select{
@@ -104,6 +111,11 @@ body{
     width: 335px;
     height: 34px;
     box-sizing: border-box;
+}
+
+.home__opcoes__local__select__opcoes__opcao{
+  font-size: 16px;
+  text-align: center;
 }
 
 .home__opcoes__lugares-favoritos__imagem-estrela{
