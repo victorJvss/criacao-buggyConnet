@@ -25,8 +25,21 @@ slotsInputs.forEach( (slot) => {
 });
 
 botaoProximo.addEventListener('click', () => {
-    const verificaslots = slotsInputs.forEach(slot => slot.value.length === 1? window.location.href ="./home.html" : alert("Digite os 4 digitos corretamente!"));
-    return verificaslots;
+    
+    const slotFilter = [];
+
+    slotsInputs.forEach((slots) => {
+        if(slots.value.length === 0){
+            slotFilter.push(slots)
+        }
+    })
+
+    if(slotFilter.length > 0){
+        alert("Digite os 4 digitos corretamente!");
+    }else{
+        window.location.href = "./home.html"
+    }
+
 
 })
 
