@@ -25,7 +25,7 @@ slotsInputs.forEach( (slot) => {
     });
 });
 
-// verificação para saber se os valores apresentados pelo usuário está correto!
+    // verificação para saber se os valores apresentados pelo usuário está correto!
 
 botaoProximo.addEventListener('click', () => {
     

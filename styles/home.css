@@ -191,7 +191,7 @@ body{
     color: #EFAC29;
 }
 
-.home__destaque__proximo-a-voce__mapa{
+#home__destaque__proximo-a-voce__mapa{
     margin-top:16px;
     width: 342px;
     height: 183px;
