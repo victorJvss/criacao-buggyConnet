@@ -93,3 +93,9 @@ body{
     opacity: 49%;
 }
 
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;  
+}
+
+
+
