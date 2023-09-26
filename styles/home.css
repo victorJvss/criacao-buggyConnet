@@ -27,6 +27,7 @@ body{
 .home__destaque__imagem{
     margin-top: 48px;
     margin-left: 314px;
+    cursor: pointer;
 }
 
 .home__destaque__propaganda{
@@ -191,7 +192,7 @@ body{
     color: #EFAC29;
 }
 
-#home__destaque__proximo-a-voce__mapa{
+#map{
     margin-top:16px;
     width: 342px;
     height: 183px;

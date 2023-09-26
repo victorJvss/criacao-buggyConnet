@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.ajuda{
+    width: 375px;
+    height: 812px;
+    border: #000000 1px solid;
+    background-color: #263A31;
+}
+
+.ajuda__sair{
+    margin: 44px 0 20px 16px;
+    cursor: pointer;
+}
+
+.ajuda__texto{
+    margin: 0px 0px 25px 16px;
+    font-family: 'abel', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #EFAC29;
+}
+
+.ajuda__divisao{
+    display: flex;
+    margin: auto;
+    width: 300px;
+    height: 1px;
+}
+
+.ajuda__opcoes{
+    margin: 14px 0 0 0px;
+}
+
+.ajuda__opcoes__opcao{
+    display: flex;
+    margin: 14px 0 14px 16px;
+}
+
+.ajuda__opcoes__opcao__icone{
+    margin-right: 8px;
+}
+
+.ajuda__opcoes__opcao__texto{
+    margin-block: auto;
+    font-family: 'abel', sans-serif;
+    color: #EFAC29;
+    margin-right: 10px;
+}
+
+.ajuda__opcoes__opcao__mais{
+    height: 10px;
+    margin-block: auto;
+}
+

@@ -41,6 +41,13 @@ body{
     margin-right: 7px;
     text-align: center;
     font-size: 20px;
+    cursor: pointer;
+}
+
+.conteudo__sessao-principal__erro{
+    margin-top: 10px;
+    color: #EFAC29;
+    font-family: 'abel',sans-serif;
 }
 
 .conteudo__sessao-principal__botoes-codigo{
@@ -49,12 +56,14 @@ body{
     flex-direction: column;
     height: 34px;
     width: 145px;
+   
 }
 
 .conteudo__sessao-principal__botao-codigo{
     border-radius: 1000px;
     font-size: 12px;
     padding: 10px 10px;
+    cursor: pointer;
 }
 
 
@@ -63,15 +72,18 @@ body{
    border-radius: 1000px;
    font-size: 12px;
    padding: 10px 10px;
+   cursor: pointer;
 }
 
 .conteudo__sessao-principal__botoes-voltar-proximo{
     margin-top: 394px ;
+    
 }
 
 .conteudo__sessao-principal__botoes-voltar-proximo{
     display: flex;
     justify-content: space-between;
+   
 }
 
 .conteudo__sessao-principal__botoes-voltar-proximo__seta{
@@ -83,6 +95,7 @@ body{
     border-radius: 100%;
     display: flex;
     justify-content:center;
+    cursor: pointer;
 }
 
 .conteudo__sessao-principal__botoes-voltar-proximo__proximo{
@@ -91,6 +104,7 @@ body{
     border-radius:1000px;
     background-color: #f4f4f4;
     opacity: 49%;
+    cursor:pointer;
 }
 
 input[type=number]::-webkit-inner-spin-button { 

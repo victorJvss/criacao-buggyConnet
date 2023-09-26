@@ -5,6 +5,7 @@
 const customSelect = document.querySelector(".conteudo__campo-de-contato__custom-select");
 const selectedImage = document.getElementById("selectedImage");
 const options = document.querySelectorAll(".conteudo__campo-de-contato__custom-select__options__option");
+const spanErro = document.querySelector(".conteudo__campo-de-contato__erro");
 
 
 customSelect.addEventListener("click", function () {
@@ -64,7 +65,7 @@ input.addEventListener("keypress", () => {
     if(tamanhoAtualDoinput === 16){
         window.location.href = "./otp.html"
     }else{
-        alert("Preencha o campo de telefone corretamente!")
+        spanErro.textContent = "Preencha o campo de telefone corretamente!"
     }
 
 

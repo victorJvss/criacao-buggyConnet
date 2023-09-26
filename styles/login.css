@@ -40,6 +40,11 @@ main{
     width: 232px;
 }
 
+.conteudo__campo-de-contato__erro{
+    color: #EFAC29;
+    font-family: 'abel',sans-serif;
+}
+
 .conteudo__botao-proximo{
     color: #FFFFFF;
     text-decoration: none;
@@ -49,7 +54,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 
 .conteudo__texto-de-verificacao{
@@ -154,6 +159,7 @@ main{
     align-items: center;
     padding: 5px;
     cursor: pointer;
+    
 }
 
 .conteudo__campo-de-contato__custom-select .conteudo__campo-de-contato__custom-select__options__option:hover {

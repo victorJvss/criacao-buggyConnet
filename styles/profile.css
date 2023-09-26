@@ -23,6 +23,7 @@ body{
 
 .perfil__opcoes__sair{
     margin: 44px 0 9px 16px;
+    cursor: pointer;
 }
 
 .perfil__opcoes__nome-foto{
@@ -72,10 +73,24 @@ body{
     height: 74px;
     background-color: #F6F6F6;
     border-radius: 10px;
-    
+    cursor: pointer;
 }
 
-.perfil__opcoes__opcao__perfil__temas{
+.perfil__opcoes__opcao__perfil:hover{
+    border: #000000 0.2px solid;
+}
+
+.perfil__opcoes__opcao__perfil__temas__ajuda{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.perfil__opcoes__opcao__perfil__temas__carteira{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.perfil__opcoes__opcao__perfil__temas__viagens{
     text-align: center;
     margin-top: 15px;
 }

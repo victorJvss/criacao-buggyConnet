@@ -1,20 +1,66 @@
+const paginaUsuario = document.querySelector(".home__destaque__imagem");
+const inputLocal = document.querySelector(".home__opcoes__local__input")
 
-// Funcão usada com a biblioteca LEAFLET para saber sua posição atual e indicar ela no mapa 
+paginaUsuario.addEventListener('click', () => {
+    window.location.href = "./profile.html"
+})
+          
+let map;
 
-function posicaoAtual(pos){
+
+async function initMap(pos) {
+    
     const latitude = pos.coords.latitude
     const longitude = pos.coords.longitude
-
-    var map = L.map('home__destaque__proximo-a-voce__mapa').setView([latitude,longitude], 13);
+    
+    map = L.map('map').setView([latitude, longitude], 13);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
-
-    L.marker([latitude, longitude]).addTo(map)
-        .bindPopup('Eu estou aqui!.')
+  
+    L.marker([latitude,longitude]).addTo(map)
+        .bindPopup('Estou aqui!')
         .openPopup();
+};
+
+inputLocal.addEventListener("focusout", () => {
+  navigator.geolocation.getCurrentPosition(idPlaces)
+})
+
+async function idPlaces(pos) {
+  
+  const latitude = pos.coords.latitude
+  const longitude = pos.coords.longitude
+  
+    const apiLugar = await fetch('https://places.googleapis.com/v1/places:searchText', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-Goog-Api-Key': 'AIzaSyCVL6OdjgC8T8JYkQv2tB0YIhNAQWkY3XI',
+      'X-Goog-FieldMask': 'places.displayName,places.formattedAddress,places.priceLevel,places.id,places.location',
+    },
+    body: JSON.stringify({
+      textQuery: `${inputLocal.value}`,
+    }),
+  });
+
+  const apiLugarConvertido = await apiLugar.json();
+
+  console.log(apiLugarConvertido.places[0].location.latitude,apiLugarConvertido.places[0].location.longitude)
+  
+ 
+
+  let rota = L.Routing.control({
+    waypoints: [
+        L.latLng(apiLugarConvertido.places[0].location.latitude, apiLugarConvertido.places[0].location.longitude),
+        L.latLng(latitude, longitude)
+        ]
+      }).addTo(map);
+
 
 }
 
-navigator.geolocation.getCurrentPosition(posicaoAtual)
+
+navigator.geolocation.getCurrentPosition(initMap)
+
