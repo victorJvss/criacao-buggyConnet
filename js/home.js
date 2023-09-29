@@ -28,6 +28,8 @@ inputLocal.addEventListener("focusout", () => {
   navigator.geolocation.getCurrentPosition(idPlaces)
 })
 
+let rota;
+
 async function idPlaces(pos) {
   
   const latitude = pos.coords.latitude
@@ -46,18 +48,29 @@ async function idPlaces(pos) {
   });
 
   const apiLugarConvertido = await apiLugar.json();
-
-  console.log(apiLugarConvertido.places[0].location.latitude,apiLugarConvertido.places[0].location.longitude)
-  
  
+  if(rota != undefined){
+    rota.remove()
 
-  let rota = L.Routing.control({
-    waypoints: [
-        L.latLng(apiLugarConvertido.places[0].location.latitude, apiLugarConvertido.places[0].location.longitude),
-        L.latLng(latitude, longitude)
-        ]
-      }).addTo(map);
+    rota = L.Routing.control({
+      waypoints: [
+          L.latLng(apiLugarConvertido.places[0].location.latitude, apiLugarConvertido.places[0].location.longitude),
+          L.latLng(latitude, longitude)
+          ]
+        }).addTo(map);  
+  }else{
+    rota = L.Routing.control({
+      waypoints: [
+          L.latLng(apiLugarConvertido.places[0].location.latitude, apiLugarConvertido.places[0].location.longitude),
+          L.latLng(latitude, longitude)
+          ]
+        }).addTo(map);
+  }
 
+
+  const opcoesInput = document.querySelector(".leaflet-container .leaflet-control-container")
+  opcoesInput.childNodes[1].remove()
+  
 
 }
 
