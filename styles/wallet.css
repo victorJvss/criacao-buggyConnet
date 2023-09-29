@@ -24,6 +24,7 @@ body{
 
 .wallet__saldo__icone-voltar{
     margin: 44px 0 27px 16px ;
+    cursor: pointer;
 }
 
 .wallet__saldo__texto-carteira{
