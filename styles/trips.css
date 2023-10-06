@@ -16,6 +16,7 @@ body{
 
 .viagens-sair{
     margin: 40px 0 20px 16px;
+    cursor: pointer;
 }
 
 .viagens-perfil{
@@ -78,7 +79,15 @@ body{
     font-size: 10px;
 }
 
+@media (max-width:480px){
+    .viagens{
+        width: 100vw;
+        height: 100vh;
+        background-color: #263A31;
+    }
 
-
-
-
+    .viagens-divisao{
+        width: 100%;
+        height: 1px;
+    }
+}

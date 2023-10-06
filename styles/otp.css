@@ -111,5 +111,14 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;  
 }
 
-
+@media (max-width:480px){
+    .conteudo{
+        width: 375px;
+        height: 550px;
+    }
+    .conteudo__sessao-principal__botoes-voltar-proximo{
+        margin-top: 80% ;
+        
+    }
+}
 

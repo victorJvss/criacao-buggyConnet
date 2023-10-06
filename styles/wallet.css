@@ -6,7 +6,7 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: #4954ee;
+    background-color: #263A31;
 }
 
 .wallet{
@@ -162,4 +162,36 @@ body{
     color: #EFAC29;
     font-family: 'abel',sans-serif;
     font-size: 16px;
+}
+
+@media (max-width:480px){
+    
+    .wallet{
+        width: 100vw;
+        height:812px;
+        border: #000000 solid 0px; 
+        background-color:#263A31 ; 
+    }
+
+    .wallet__saldo{
+        width: 100vw;
+        height: 266px;
+        background-color: #48D38F;
+    }
+    
+    .wallet__saldo__campo-saldo{
+        width: 90vw;
+        height: 94px;
+        background-color: #F6F6F6;
+        border-radius: 14px;
+        margin: auto;
+    }
+    
+    .wallet__opcoes__perfil__vetor-separacao{
+        width: 100%;
+    }
+
+    .wallet__opcoes__cupons__vetor-separacao{
+        width: 100%;
+    }
 }

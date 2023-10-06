@@ -59,6 +59,7 @@ main{
 
 .conteudo__texto-de-verificacao{
     color: #EFAC29;
+    width: 350px;
     margin-top: 38px;
     font-size: 14px;
     font-family: 'abel',sans-serif;
@@ -164,5 +165,82 @@ main{
 
 .conteudo__campo-de-contato__custom-select .conteudo__campo-de-contato__custom-select__options__option:hover {
     background-color: #f0f0f0;
+}
+
+@media (max-width:480px){
+    .conteudo{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .conteudo__texto-digite-numero{
+        margin-top: 40px;
+        font-size: 16px;
+        color: #F8F8F8;
+        font-family: 'abel',sans-serif;  
+    
+    }
+
+    .conteudo__campo-de-contato__custom-select {
+        position: relative;
+        width: 87px;
+        cursor: pointer;
+        user-select: none;
+        margin:0 5px 0 0;
+    }
+    
+    .conteudo__campo-de-contato{
+        margin-top: 20px;
+        display: flex;  
+        height: 49px;
+        width: 270px;
+    }
+
+    .conteudo__campo-de-contato__erro{
+        font-size: 12px;
+        color: #EFAC29;
+        font-family: 'abel',sans-serif;
+    }
+    
+    .conteudo__botao-proximo{
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: #FF793F;
+        width: 270px;
+        height: 49px;
+        display: flex;
+        align-items: center;
+        margin: 10px 0 0 0;
+    }
+
+    .conteudo__texto-de-verificacao{
+        color: #EFAC29;
+        margin-top: 38px;
+        font-size: 14px;
+        font-family: 'abel',sans-serif;
+        width: 270px;
+        text-align: center;
+    }
+
+    .conteudo__outras-opcoes-de-login__vetor{
+        height: 0.7px;
+        width: 112px;
+    }
+    
+    .conteudo__plataformas__login-com-outra-plataforma{
+        display: flex;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        width: 270px;
+        height: 30px;
+        border-radius: 2px;
+        border: #FFFFFF 1px solid;
+        margin-top: 10px;
+    }
+
 }
 
