@@ -123,8 +123,8 @@ async function validacaoCpf(cpf){
     const buscaCpf = await fetch(`https://cpf_validator.p.rapidapi.com/cpf?cpf=${cpf}`,{
         method: 'GET',
         headers: {
-            Authorization: 'c3e8636c410379ef76c737033b269cf5130a7f4e739f19068e633046d643b4244e3a1b67b93bb4ab00fb0b11b7026d2b',
-            'X-RapidAPI-Key': '15b0bb526dmsh88c1b7513c4fca7p1782e2jsn8805646feea7',
+            Authorization: 'c3e8636c410379ef76c737033b269cf5130a7f4e739f19068e633046d643b4244e3a1b67b93bb4ab00fb0b11b7026d2e',
+            'X-RapidAPI-Key': '15b0bb526dmsh88c1b7513c4fca7p1782e2jsn8805646feea8',
             'X-RapidAPI-Host': 'cpf_validator.p.rapidapi.com'
 
         }
