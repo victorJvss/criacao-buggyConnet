@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/account-creation.css">
+    <title>Inscreva-se</title>
+</head>
+<body>
+    <main class="dados">
+        
+        <section class="dados-container">
+          
+            <div class="dados-logo">
+                <img src="../assets/img/LOGO.png" alt="">
+           </div>
+          
+           <form class="dados-form">
+                <div class="dados-campo">
+                    
+                    <input type="text" placeholder="Nome" class="dados-campos" required>
+                    <input type="email" placeholder="Email" class="dados-campos" required>
+                    
+                    <input type="text" placeholder="CPF" class="dados-campos" id="cpf-campo" required maxlength="14" minlength="14">
+                    <span class="cpf-erro"></span>
+                    
+                    <input type="tel" placeholder="Telefone" class="dados-campos" id="telefone-campo" required maxlength="16">
+                    <span class="telefone-erro"></span>
+                    
+                    <input type="text" placeholder="CEP" class="dados-campos" id="cep-campo" required maxlength="8">
+                    <span class="cep-erro"></span>
+                    
+                    <div class="dados-endereco">
+                        <input type="text" placeholder="Estado" class="dados-complementos" data-estado>
+                        <input type="text" placeholder="Cidade" class="dados-complementos" data-cidade >
+                        <input type="text" placeholder="Bairro" class="dados-complementos" data-bairro>
+                        <input type="text" placeholder="Rua" class="dados-complementos" data-rua>
+                        <input type="text" placeholder="Número da Casa" class="dados-complementos">
+                    </div>
+                    
+                    <div class="dados-conta conta">
+                        <label for="conta-pessoal-input" class="conta-texto">Conta pessoal</label>
+                        <input type="checkbox" name="conta-pessoal-input" id="conta-pessoal-input" checked>
+                        <label for="conta-profissional-input" class="conta-texto" >Conta profissional</label>
+                        <input type="checkbox" name="conta-profissional-input" id="conta-profissional-input">
+                    </div>
+                    <span class="erro-checkbox"></span>
+                
+                </div>
+
+                <input class="dados-enviar" type="submit" value="Enviar">
+            </form>
+        
+        </section>
+    
+    </main>
+
+    <script src="../js/account-creation.js"></script>
+</body>
+</html>

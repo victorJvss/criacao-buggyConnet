@@ -5,8 +5,10 @@ paginaUsuario.addEventListener('click', () => {
     window.location.href = "./profile.html"
 })
           
-let map;
 
+  // Minha posição atual
+
+let map;
 
 async function initMap(pos) {
     
@@ -24,6 +26,8 @@ async function initMap(pos) {
         .openPopup();
 };
 
+  // chamar a função para fazer a rota
+
 inputLocal.addEventListener("focusout", () => {
   navigator.geolocation.getCurrentPosition(idPlaces)
 })
@@ -32,6 +36,8 @@ let rota;
 
 async function idPlaces(pos) {
   
+  // Buscando o local procurado
+
   const latitude = pos.coords.latitude
   const longitude = pos.coords.longitude
   
@@ -43,12 +49,14 @@ async function idPlaces(pos) {
       'X-Goog-FieldMask': 'places.displayName,places.formattedAddress,places.priceLevel,places.id,places.location',
     },
     body: JSON.stringify({
-      textQuery: `${inputLocal.value}`,
+      textQuery: inputLocal.value,
     }),
   });
 
   const apiLugarConvertido = await apiLugar.json();
  
+  // Verificando se já está marcando uma rota no mapa!
+
   if(rota != undefined){
     rota.remove()
 
@@ -67,7 +75,8 @@ async function idPlaces(pos) {
         }).addTo(map);
   }
 
-
+  // Removendo partes da api que não são necessárias
+  
   const opcoesInput = document.querySelector(".leaflet-container .leaflet-control-container")
   opcoesInput.childNodes[1].remove()
   

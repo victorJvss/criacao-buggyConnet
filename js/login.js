@@ -68,6 +68,10 @@ input.addEventListener("keypress", () => {
         spanErro.textContent = "Preencha o campo de telefone corretamente!"
     }
 
-
  })
 
+const singUp = document.querySelector(".sign-up");
+
+singUp.addEventListener("click", () => {
+    window.location.href = "./account-creation.html"
+})

@@ -167,6 +167,26 @@ main{
     background-color: #f0f0f0;
 }
 
+.sign-up{
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+}
+
+.sign-up-text:hover{
+    color: #EFAC29;
+    border: #EFAC29 solid 1px;
+}
+
+.sign-up-text{
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'abel', sans-serif;
+    color: #f0f0f0;
+    padding: 4px;
+    border: #FFFFFF solid 1px;
+}
+
 @media (max-width:480px){
     .conteudo{
         width: 100vw;
@@ -243,4 +263,5 @@ main{
     }
 
 }
+
 

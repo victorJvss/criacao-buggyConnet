@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.dados{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dados-container{
+    width: 375px;
+    height: 812px;
+    background-color: #263A31;
+}
+
+.dados-logo{
+ text-align: center;
+ margin: 20px 0;
+}
+
+.dados-campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.dados-campos{
+    width: 70%;
+    margin: auto  ;
+    height: 30px;
+    margin-bottom: 3%;
+    border-radius: 40px;
+    border: none;
+}
+
+.dados-campos::placeholder{
+    font-size: 12px;
+    padding-left: 4%;
+}
+
+.dados-endereco{
+    text-align: center;
+}
+
+.dados-complementos::placeholder{
+    font-size: 12px;
+    padding-left: 4%;
+}
+
+.dados-complementos{
+    width: 34%;
+    margin: auto  ;
+    height: 30px;
+    margin-bottom: 3%;
+    border-radius: 40px;
+    border: none;
+}
+.dados-endereco{
+    display: none;
+}
+
+.conta{
+    margin:20px 0;
+    text-align: center;
+}
+
+.conta-texto{
+    font-family: 'abel',sans-serif;
+    color: #EFAC29;
+    font-size: 90%;
+}
+
+.dados-enviar{
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #FF793F;
+    width: 270px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    align-items: center;
+}
+
+.telefone-erro{
+    color: #EFAC29;
+    font-family: 'abel',sans-serif;
+    font-size: 80%;
+    text-align: center;
+}
+
+
+.cpf-erro{
+    color: #EFAC29;
+    font-family: 'abel',sans-serif;
+    font-size: 80%;
+    text-align: center;
+}
+
+.erro-checkbox{
+    color: #EFAC29;
+    font-family: 'abel',sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+.cep-erro{
+    color: #EFAC29;
+    font-family: 'abel',sans-serif;
+    font-size: 80%;
+    text-align: center;
+}
+
+@media(max-width:480px){
+    .dados-container{
+        width: 100vw;
+        height: 100vh;
+    }
+}
